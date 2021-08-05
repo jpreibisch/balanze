@@ -1,0 +1,16 @@
+$fuente: 'Poppins', sans-serif;
+$colortitulo:rgb(67, 189, 183);  
+$colorsubtitulos: rgb(196, 108, 9); 
+$colorparrafo: black; 
+$colorfondo:#525455; 
+$fondonav:rgba(1, 1, 1, 0.3);
+
+@mixin medidas-titulos {
+   font-size: 2em;
+   font-weight:900;
+}
+
+@mixin medidas-parrafos {
+    font-size: 1em;
+    font-weight: bold;
+}

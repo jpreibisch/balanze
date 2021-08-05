@@ -1,0 +1,71 @@
+/*Main*/
+
+.iframe{
+    padding-left: 40em;
+    max-width: 50%;
+}
+
+#tabla-container{
+    margin-top: 0;
+    background: url(/imagenes/back14.jpg);
+}
+
+.tabla-prod{
+   
+    margin: 2em;
+    padding: 5em; 
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: $fondonav;
+        &__link{
+            background: rgb(216, 75, 10);
+            color: white;
+            text-decoration: none;
+            padding: .5em 1em;
+            border-radius: .5em;
+            display:inline-block;
+            margin:.5em;
+            padding:.5em;
+            &:hover {
+            background: rgb(207, 170, 5);
+        }
+    }
+        &__titulo{
+            background-color:  $fondonav;
+            color: $colortitulo;
+        }
+}
+
+.lista-pasos{
+
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    font-size: 30px;
+    font-weight:bolder;
+    align-content:center;
+    color:$colorparrafo;
+
+}
+
+
+.subtitulos-servicios{
+    color: $colorsubtitulos;
+    font-size: 30px;
+    margin: 1em;
+}
+
+.titulos-servicios{
+    color: $colortitulo;
+    font-size: 3em;
+    margin: 1em;
+    text-decoration: underline;
+}
+
+.p-servicios{
+    margin: 1em;
+    color: $colorparrafo;
+    
+}

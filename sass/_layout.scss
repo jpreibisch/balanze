@@ -1,0 +1,139 @@
+/*Body*/
+
+html{
+
+    font-family: $fuente;
+}
+
+.menu__logo{
+    width: 37vh;
+    height: 12vh;
+    margin: 0.5em;
+
+}
+
+body {
+    min-height: 100vh;
+	height: 100%;
+	display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*Header*/
+
+header {
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 1.5em 2em;
+	box-shadow: 0 0 20px 0 black;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 20px; 
+    font-weight: bolder;
+    background-color: $fondonav;
+    gap: 1em;
+    list-style-type:none;
+    padding: 10px;
+
+    &__md{
+        display:none;
+    }
+
+    &__enlace {
+        padding: 1em;
+        text-decoration: none;
+        color: rgb(8, 7, 0); 
+        &:hover {
+            transform: 2px;
+            color: whitesmoke;
+            transition: 2s;
+        }
+    }
+}
+
+@media only screen and (min-width: 650px){
+    .menu__sm{
+        display:none;
+    }
+    .menu__md{
+        display:flex;
+        gap:1em;
+        margin-right:1em;
+    }
+}
+
+
+
+/*Footer*/
+
+.container{
+    margin-top: 20px;
+    min-height: 7em;
+    background-color:$colorfondo;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 0.3em;
+    color: black;
+
+    &__redes  ul, li, a {
+    display: inline;
+    font-weight: bolder;
+    text-decoration:none;
+    list-style-type:none;
+    margin-right:.2em;
+    color:black;
+    font-size: 1.2em;
+    gap: .5em;
+    }
+
+    &__mapa  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    padding-left: 1em;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2vh;
+    text-align:left;
+    list-style-type: none;
+    }    
+
+    &__lista-redes{
+        font-weight: bolder;
+        text-decoration:none;
+        list-style-type:none;
+        display: inline-block;
+        margin-right: .2em;
+        color:$colorparrafo;
+    
+
+        &__enlace{
+            display:inline;
+            list-style-type:none; 
+            color:$colorparrafo;
+            font-size: 1.5em;
+            gap: .5em;
+           
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    
+    .container{
+        flex-direction: column-reverse;
+        gap: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        align-items: center;
+    }
+}

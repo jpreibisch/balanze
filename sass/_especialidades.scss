@@ -1,0 +1,76 @@
+.container-parrafos{
+    display: flex; 
+    flex-direction:row;
+    padding: 1em;
+    max-height: 110vh;
+    place-content: center;
+    
+    
+
+    &__descr{
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+        padding-bottom: .5em;
+        font-size: 25px;
+        font-weight: 900;
+        align-content:center;
+        color:$colorparrafo;
+        align-content: center;
+        text-align: justify;
+        
+    
+    }
+}
+
+.container-p{
+    max-width: 800px;
+    max-height: 700px;
+
+}
+
+.boton{
+    background: rgb(230, 106, 5);
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+    border-radius: .5em;
+    display:inline-block;
+    align-items: center;
+    margin-top:.5em;
+    margin-left: 52em;
+    max-width: 100px;
+        &:hover {
+            background: rgb(235, 202, 14);
+        }
+}
+
+
+ 
+.subtitulos-especialidades{
+    color: $colorsubtitulos;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-left:.8em;
+    
+}
+
+.container-imagen{
+    margin: 2em;
+    padding-left: 7em;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    max-width: 100em;
+    max-height: 50em;
+    gap: 16em;
+    
+    
+}
+
+.imagen-esp{
+    height: 300px;
+    width: 800px;
+    border-radius: 10%;
+    border: blanchedalmond;
+    
+}
