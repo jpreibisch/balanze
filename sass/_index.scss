@@ -12,7 +12,7 @@
 
     display: grid; 
     padding: 1em;
-    background: url("../imagenes/back12.jpg");
+    background: url("../imagenes/back12.jpg") no-repeat center /cover;
     height: 80vh;
     place-content: center;
 
