@@ -43,10 +43,6 @@ header {
     list-style-type:none;
     padding: 10px;
 
-    &__md{
-        display:none;
-    }
-
     &__enlace {
         padding: 1em;
         text-decoration: none;
@@ -59,19 +55,139 @@ header {
     }
 }
 
-@media only screen and (min-width: 650px){
+@media only screen and (max-width: 450px){
     .menu__sm{
-        float: left;
+        float: right;
         position:relative;
         margin-right: 1em;
-        display:none;
+    
     }
     .menu__md{
         display:none;
     }
 }
+ 
+label{
+    
+    background: $col-pink; 
+    padding: 0.5em 3em;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    position: relative;
+    
+    }
+    
+     
+[type="radio"]{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    opacity: 0; 
+    margin: 0;
+    z-index: 1;
+     
+    }
+     
+.detalle{
+    
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    left: 0;
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 5px;
+    
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-
+    li{
+        list-style-type:none;
+        list-style: none;
+    }
+    
+    a{
+    
+        color: white; 
+        display: block;
+        white-space: nowrap;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        padding: 6px;
+    
+        &:hover{
+            color: $colortitulo;
+        }
+    
+    }  
+     
+}
+    
+.close-tab{
+    
+    position: absolute; 
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+     
+    &label{
+    
+    background: $col-pink;
+    color: $col-white;     
+    }
+    
+}
+         
+[type="radio"]:checked ~ label {
+    z-index: 2;
+     
+}
+    
+[type="radio"]:checked ~ label ~ .detalle {
+    
+    z-index: 1;
+    opacity: 1;     
+}
+    
+     
+[type="radio"]:checked ~ label ~ .close-tab {
+    
+     z-index: 3;
+}
+    
+.menu-link--active{
+    
+    color: $col-yellow;
+}
+    
+@media only screen and (min-width: 450px){
+    
+    .menu__sm{
+    display: none;
+ 
+    }
+    .menu__md{ 
+    display: flex;
+    gap: 1em; 
+    margin-right: 1em;
+ 
+    }
+    .menu-link:hover{
+    transform: scale(1.1); 
+    }
+    
+}
 
 /*Footer*/
 
