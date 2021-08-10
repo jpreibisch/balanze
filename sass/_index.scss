@@ -12,7 +12,7 @@
 
     display: grid; 
     padding: 1em;
-    background: url("../imagenes/back12.jpg") no-repeat center /cover;
+    background: url("/imagenes/back12.jpg") no-repeat center /cover;
     height: 80vh;
     place-content: center;
 
@@ -153,15 +153,15 @@
 }
 
 #img1{
-    background:url("../imagenes/doc7.jpg") no-repeat 50% 20% /cover;
+    background:url("/imagenes/doc7.jpg") no-repeat 50% 20% /cover;
 }
 
 #img2{
-    background:url("../imagenes/doc8.jpg") no-repeat 50% 20% /cover;
+    background:url("/imagenes/doc8.jpg") no-repeat 50% 20% /cover;
 
 }
 
 #img3{
     
-    background:url("../imagenes/doc10.jpg") no-repeat 50% 20%/cover;
+    background:url("/imagenes/doc10.jpg") no-repeat 50% 20%/cover;
 }
