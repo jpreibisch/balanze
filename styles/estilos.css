@@ -202,7 +202,7 @@ header {
   display: -ms-grid;
   display: grid;
   padding: 1em;
-  background: url(/imagenes/back12.jpg);
+  background: url("/imagenes/back12.jpg");
   height: 80vh;
   place-content: center;
 }
@@ -378,15 +378,15 @@ header {
 }
 
 #img1 {
-  background: url(/imagenes/doc7.jpg) no-repeat 50% 20%/cover;
+  background: url("/imagenes/doc7.jpg") no-repeat 50% 20%/cover;
 }
 
 #img2 {
-  background: url(/imagenes/doc8.jpg) no-repeat 50% 20%/cover;
+  background: url("/imagenes/doc8.jpg") no-repeat 50% 20%/cover;
 }
 
 #img3 {
-  background: url(/imagenes/doc10.jpg) no-repeat 50% 20%/cover;
+  background: url("/imagenes/doc10.jpg") no-repeat 50% 20%/cover;
 }
 
 .container-parrafos {
@@ -479,7 +479,7 @@ header {
 
 #tabla-container {
   margin-top: 0;
-  background: url(/imagenes/back14.jpg);
+  background: url("/imagenes/back14.jpg");
 }
 
 .tabla-prod {
@@ -549,7 +549,7 @@ header {
 }
 
 .fondo-tienda {
-  background: url("../imagenes/back16.jpg") no-repeat center/cover;
+  background: url("/imagenes/back16.jpg") no-repeat center/cover;
 }
 
 .container-tienda {
@@ -666,15 +666,15 @@ header {
 }
 
 #tienda1 {
-  background: url("../imagenes/poligrafo 1.jpg") no-repeat 50% 70%/cover;
+  background: url("/imagenes/poligrafo 1.jpg") no-repeat 50% 70%/cover;
 }
 
 #tienda2 {
-  background: url("../imagenes/cpap.jpg") no-repeat 50% 70%/cover;
+  background: url("/imagenes/cpap.jpg") no-repeat 50% 70%/cover;
 }
 
 #tienda3 {
-  background: url("../imagenes/almohada.jfif") no-repeat 50% 70%/cover;
+  background: url("/imagenes/almohada.jfif") no-repeat 50% 70%/cover;
 }
 
 .form__formulario-general {
@@ -764,6 +764,6 @@ form.formulario-general input, form.formulario-general select, form.formulario-g
 }
 
 .back-contacto {
-  background: url(/imagenes/back15.jpg);
+  background: url("/imagenes/back15.jpg");
 }
 /*# sourceMappingURL=estilos.css.map */
