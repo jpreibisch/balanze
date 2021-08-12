@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/estilos.css">
 </head>
 
-<body>
+<body class="grid">
 
 <!--Header-->
     <header>
@@ -19,24 +19,11 @@
             <img class="menu__logo" src="imagenes/logo.png" alt="logo" id="logo">
         </div>
         <nav>
-            <div class= "menu menu__sm">
-                <a href="#"></a>
-                <input type="radio" id="tab-1" name="tab-group-1"/>
-                <label for="tab-1"> <span class="iconify" data-icon="whh:menu" data-inline="false"></span></label>
-                <div class="tab close-tab">  
-                <input type="radio" id="tab-close" name="tab-group-1"/>
-                <label for="tab-close"></label> 
-                </div>
-                <div class="detalle">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="especialidades.html">Especialidades</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>   
-            </div>
+            <label for="menu-dropdown" class="menu menu__sm">
+                <span class="iconify" data-icon="heroicons-solid:menu" data-inline="false"></span>
+            </label>
+                <input type="checkbox" id="menu-dropdown" hidden>
+    
             <ul class="menu menu__md">
                 <li><a class="menu__enlace" href="index.html">Home</a></li>
                 <li><a  class="menu__enlace" href="servicios.html">Servicios</a></li>
@@ -53,11 +40,13 @@
         <section class="hero">
             <h1 class="hero__titulo">¿Tienes Problemas para dormir? ¡Nosotros te ayudamos!</h1> 
             <h2 class="hero__subtitulo">¿Que ofrecemos?</h2>
-                <p class="hero__descr">Volver a dormir con nuestros tratamientos y entrenamiento para superar de modo efectivo y sin medicamentos tu insomnio.</p>         
-                <p class="hero__descr">Profesionales tienen mas de 20 años de trayectoria y conocen la forma de ayudarte a superar tus problemas para dormir y mejorar tu calidad de vida</p>
+                <div class="hero__descr">
+                    <p>Volver a dormir con nuestros tratamientos y entrenamiento para superar de modo efectivo y sin medicamentos tu insomnio.</p>         
+                    <p>Nuestros profesionales tienen mas de 20 años de trayectoria y conocen la forma de ayudarte a superar tus problemas para dormir y mejorar tu calidad de vida.</p>
+                </div>
         </section>
 
-            <h2 class="hero__subtitulo">Nuestro Equipo:</h2>
+            <h2 class="hero__titulo">Nuestro Equipo:</h2>
         <div class="container__cards">
         <div class="card">
             <div class="card__img" id="img1"></div>
@@ -95,7 +84,7 @@
 <!--Footer-->
 
 <footer>
-    <div class="container container__sm container__md">
+    <div class="container">
         <div>
             <ul class="container__mapa">
                 <li><a href="index.html">Home</a></li>
@@ -105,7 +94,7 @@
             </ul>
         </div>
         <div>
-            <ul class="container-redes">
+            <ul class="container__redes">
                 <li><a href="#">
                         <span class="iconify" data-icon="ls:instagram" data-inline="false"></span>
                     </a>

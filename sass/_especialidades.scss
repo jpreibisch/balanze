@@ -12,7 +12,7 @@
         margin-left: 1em;
         margin-bottom: 1.5em;
         padding-bottom: .5em;
-        font-size: 25px;
+        font-size: 1.5625rem;
         font-weight: 900;
         align-content:center;
         color:$colorparrafo;
@@ -24,9 +24,9 @@
 }
 
 .container-p{
-    max-width: 800px;
-    max-height: 700px;
-    margin: 10px;
+    max-width: 50rem;
+    max-height: 43.75rem;
+    margin: 0.625rem;
 
 }
 
@@ -40,7 +40,7 @@
     align-items: center;
     margin-top:.5em;
     margin-left: 52em;
-    max-width: 100px;
+    max-width: 6.25rem;
         &:hover {
             background: rgb(235, 202, 14);
         }
@@ -62,16 +62,16 @@
     display: flex;
     flex-direction:row;
     align-items: center;
-    max-width: 800px;
-    max-height: 700px;
+    max-width: 50rem;
+    max-height: 43.75rem;
     gap: 16em;
     
     
 }
 
 .imagen-esp{
-    height: 300px;
-    width: 800px;
+    height: 18.75rem;
+    width: 50rem;
     border-radius: 10%;
     border: blanchedalmond;
     

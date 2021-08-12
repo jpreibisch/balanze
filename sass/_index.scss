@@ -1,32 +1,26 @@
 
 /*Main*/ 
 
-.titulo{
-    @include medidas-titulos;
-    color:black;
-    font-weight: bolder;
-    margin-bottom: 2em 1em;
-}
-
 .hero{
 
-    display: grid; 
+    display: flex; 
+    flex-direction: column;
     padding: 1em;
     background: url("../imagenes/back12.jpg") no-repeat center /cover;
-    height: 80vh;
+    height: 100vh;
     place-content: center;
 
     &__subtitulo{
-        @include medidas-titulos;
+        font-size: 2.2em;
         color:white;
         padding: 1em;
     }
 
     &__titulo{
-        font-size: 3em;
+        font-size: 2.5em;
         color: rgb(199, 46, 8);
         margin-left: 0.8em;
-        min-height: 80px;
+        min-height: 5rem;
            
     }
     
@@ -39,11 +33,14 @@
         padding-left: 0.8em;
         display: block;
         font-weight: bolder;
-        font-size: 1.8em;
+        font-size: 1.4em;
         line-height: 1.8em;
-        max-width: 700px;
-        align-content: center;
+        max-width: 43.75rem;
+        text-align: justify;
+        align-items: center;
         background: $fondonav;
+        gap: 2em;
+        max-width: 80%;
         
         
     }
@@ -54,16 +51,36 @@
     .hero{
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:left;
     align-content:center;
-    font-size: 0.5em;
-        &__titulo{
-        display: flex;
-        flex-direction: column;
-        font-size: 0.6em;
+    max-width: 100%;
+    padding: 0%;
+    margin: 0%;
+
+        &__subtitulo{
+        font-size: 1.2em;
         margin-top: 0;
         align-content: left;
+        max-width: 200px;
         }
+
+        &__titulo{
+            text-align: left;
+            max-width: 280px;
+            font-size: 1.5em;
+            text-decoration: none;
+               
+        }
+
+        &__descr{
+            align-content: left;
+            text-align: justify;
+            font-size: 0.6em;
+            gap: 0.8em;
+            padding: 1em;
+        }
+
+      
     }
 }
 
@@ -72,12 +89,15 @@
 .container__cards{
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0.3em;
+    margin: 0.8em;
+    padding: 0.3em;
+    
 }
 
 .card{
-    padding: 0 5em;
+    padding: 1.2em;
     display:flex;
     flex-flow: column;
     border-radius: 0.3em;
@@ -85,8 +105,8 @@
     margin-bottom: 10em;
     box-shadow: 0 10px 25px -10px black;
     transition: 300ms ease-in-out;
-    max-width: 500px;
-    max-height: 400px;
+    max-width: 31.25rem;
+    max-height: 25rem;
     &__:hover {
         transform: scale(1.05);
 	    box-shadow: 0 15px 35px -10px black;
@@ -94,7 +114,7 @@
 
     &__img{
         width: 100%;
-        flex-basis: 200px;
+        flex-basis: 12.5rem;
     }
 
     &__content{
@@ -144,7 +164,7 @@
         padding: .5em 1em;
         border-radius: .5em;
         display:inline-block;
-        margin-bottom:10px;
+        margin-bottom:0.625rem;
         &:hover {
             background: rgb(233, 201, 19);
         }
@@ -153,11 +173,11 @@
 }
 
 #img1{
-    background:url("./imagenes/doc7.jpg") no-repeat 50% 20% /cover;
+    background:url("/imagenes/doc7.jpg") no-repeat 50% 20% /cover;
 }
 
 #img2{
-    background:url("./imagenes/doc8.jpg") no-repeat 50% 20% /cover;
+    background:url("/imagenes/doc8.jpg") no-repeat 50% 20% /cover;
 
 }
 

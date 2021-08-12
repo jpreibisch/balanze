@@ -2,7 +2,7 @@
 .form__formulario-general {
     display: flex;
     flex-flow: column nowrap;
-    max-width: 450px;
+    max-width: 28.125rem;
     margin: 0 auto;
     justify-content: center;
     align-items: flex-start;
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 0.2em;
     align-items: center;
     width: 100%;
@@ -32,12 +32,12 @@ input, select, option, textarea{
 }
 
 textarea{
-    min-height: 120px;
+    min-height: 7.5rem;
 }
 
 form.formulario-general {
    
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin: 1em;
 }
 
@@ -62,7 +62,7 @@ form.formulario-general input, form.formulario-general select, form.formulario-g
     align-items: center;
     margin-top:.5em;
     margin-left: 2em;
-    max-width: 100px;
+    max-width: 6.25rem;
         &:hover {
             background: rgb(235, 202, 14);
         }
