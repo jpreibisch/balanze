@@ -35,6 +35,13 @@ header {
 	box-shadow: 0 0 20px 0 black;
 }
 
+@media only screen and (max-width: 450px){
+        .menu__logo{
+            align-content: center;
+            padding-top: 3em;
+        }
+    }
+
 .menu{
     display: flex;
     flex-direction: row-reverse;
@@ -114,6 +121,7 @@ header {
 
 /*Footer*/
 
+
 .container{
     margin-top: 1.25rem;
     min-height: 7em;
@@ -125,7 +133,7 @@ header {
     color: black;
     list-style-type: none;
 
-    &__redes  li, a {
+    &__redes  ul, li, a {
     font-weight: bolder;
     text-decoration:none;
     margin-right:.2em;
@@ -156,8 +164,8 @@ header {
         }
 }
 
-@media only screen and (max-width: 450px){
-    
+@media only screen and (max-width: 450px) {
+
     .container{
         display: flex;
         flex-direction:row;
@@ -165,7 +173,9 @@ header {
         gap: 0.5em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-        font-size:.8em;
-        
+        font-size: 0.5em;
+        &__mapa{
+            font-size: 0.5em;
+        }
     }
-}
+} 

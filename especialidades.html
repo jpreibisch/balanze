@@ -19,7 +19,12 @@
         <img class="menu__logo" src="imagenes/logo.png" alt="logo" id="logo">
     </div>
     <nav>
-        <ul class="menu">
+        <label for="menu-dropdown" class="menu menu__sm">
+            <span class="iconify" data-icon="heroicons-solid:menu" data-inline="false"></span>
+        </label>
+            <input type="checkbox" id="menu-dropdown" hidden>
+
+        <ul class="menu menu__md">
             <li><a class="menu__enlace" href="index.html">Home</a></li>
             <li><a  class="menu__enlace" href="servicios.html">Servicios</a></li>
             <li><a class="menu__enlace" href="especialidades.html">Especialidades</a></li>
@@ -32,28 +37,34 @@
 
 <!--Main-->  
 <main>
-    <div class="container-imagen">
-        <img class="imagen-esp" src="foto30.jpg" alt="Nutricion">
-        <img class="imagen-esp" src="movimiento.jpg" alt="Movimiento">
-    </div>
-        
-    <div class="container-parrafos">
-        <div class="container-p">
-        <h2 class="subtitulos-especialidades">Nutricion</h2>
-            <p class="container-especialidades__descr"> La nutrición cumple un papel fundamental en la actividad diaria de las personas, ya que de la misma depende nuestro combustible energético y la incorporación de los nutrientes necesarios para llevar adelante una vida sana y saludable.</p>
-            <p class="container-especialidades__descr"> El bienestar está en tus manos, la salud es la base para poder cumplir tus metas.</p>
-            <p class="container-especialidades__descr"> Una vez incorporados los nuevos hábitos, sentirás cómo cambia tu calidad de vida en forma sencilla y permanente.</p>  
-            <p class="container-especialidades__descr"> ¡Potencia tu energía con este novedoso plan de alimentación!</p>        
+    <div class="especialidades">
+        <div class="especialidades__imagen">
+            <div class="especialidades__imagen__estilo" id="nutricion">
+                <img src="/imagenes/foto30.jpg" alt="" width="100%">
+            </div>
+            <div class="especialidades__imagen__estilo" id="movimiento">
+                <img src="/imagenes/movimiento.jpg" alt="" width="100%">
+            </div>
         </div>
-        <div class="container-p">
+        
+        <div class="especialidades__parrafos">
+            <div class="especialidades__parrafos__descr">
+            <h2 class="subtitulos-especialidades">Nutricion</h2>
+                <p> La nutrición cumple un papel fundamental en la actividad diaria de las personas, ya que de la misma depende nuestro combustible energético y la incorporación de los nutrientes necesarios para llevar adelante una vida sana y saludable.</p>
+                <p> El bienestar está en tus manos, la salud es la base para poder cumplir tus metas.</p>
+                <p> Una vez incorporados los nuevos hábitos, sentirás cómo cambia tu calidad de vida en forma sencilla y permanente.</p>  
+                <p> ¡Potencia tu energía con este novedoso plan de alimentación!</p>        
+            </div>
+            <div clas="especialidades__parrafos__descr">
             <h2 class="subtitulos-especialidades">Movimiento Inteligente</h2>
-            <p class="container-especialidades__descr"> El científico Feldenkrais, fue un precursor en el campo de la neuroplasticidad, Nadie
-            nos enseñó a movernos.</p> 
-            <p class="container-especialidades__descr"> En sus horas de vigilia, el cerebro opera en un circuito sensorial- motor: "pensar, sentir y
-            actuar". Dentro de este operativo se encuentra nuestro Inteligencia del Movimiento.</p>
-            <p class="container-especialidades__descr"> El organismo, al explorar estas opciones , elige espontáneamente lo que es más
-            fácil, más conectado con su yo autónomo.</p> 
-            <p class="container-especialidades__descr" > Aprender como hacerlo más eficientemente para ganar salud y longevidad de tu sistema.</p>
+                <p> El científico Feldenkrais, fue un precursor en el campo de la neuroplasticidad, Nadie
+                nos enseñó a movernos.</p> 
+                <p> En sus horas de vigilia, el cerebro opera en un circuito sensorial- motor: "pensar, sentir y
+                actuar". Dentro de este operativo se encuentra nuestro Inteligencia del Movimiento.</p>
+                <p>El organismo, al explorar estas opciones , elige espontáneamente lo que es más
+                fácil, más conectado con su yo autónomo.</p> 
+                <p> Aprender como hacerlo más eficientemente para ganar salud y longevidad de tu sistema.</p>
+            </div>
         </div>
     </div>
             <div>   

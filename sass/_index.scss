@@ -9,6 +9,8 @@
     background: url("../imagenes/back12.jpg") no-repeat center /cover;
     height: 100vh;
     place-content: center;
+    
+
 
     &__subtitulo{
         font-size: 2.2em;
@@ -25,7 +27,6 @@
     }
     
     &__descr{
-        @include medidas-parrafos;
         @extend.hero__titulo;
         color: white;
         margin-top: 0.7em;
@@ -33,16 +34,14 @@
         padding-left: 0.8em;
         display: block;
         font-weight: bolder;
-        font-size: 1.4em;
         line-height: 1.8em;
-        max-width: 43.75rem;
+        place-items: left;
         text-align: justify;
-        align-items: center;
         background: $fondonav;
         gap: 2em;
-        max-width: 80%;
-        
-        
+        font-size: 1.2em;
+        max-width: 70%;
+    
     }
 }
 
@@ -51,21 +50,21 @@
     .hero{
     display:flex;
     flex-direction:column;
-    align-items:left;
+    align-items:center;
     align-content:center;
     max-width: 100%;
     padding: 0%;
     margin: 0%;
 
         &__subtitulo{
+        text-align: center;
         font-size: 1.2em;
         margin-top: 0;
-        align-content: left;
         max-width: 200px;
         }
 
         &__titulo{
-            text-align: left;
+            text-align:center;
             max-width: 280px;
             font-size: 1.5em;
             text-decoration: none;
@@ -73,7 +72,6 @@
         }
 
         &__descr{
-            align-content: left;
             text-align: justify;
             font-size: 0.6em;
             gap: 0.8em;
@@ -88,7 +86,7 @@
 
 .container__cards{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0.8em;

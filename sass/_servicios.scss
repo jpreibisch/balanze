@@ -1,13 +1,10 @@
 /*Main*/
 
-.iframe{
-    padding-left: 40em;
-    max-width: 50%;
-}
+
 
 #tabla-container{
     margin-top: 0;
-    background: url("../imagenes/back14.jpg");
+    background: url("../imagenes/back14.jpg") center;
 }
 
 .tabla-prod{
@@ -17,7 +14,8 @@
     color: white;
     text-align: center;
     font-weight: bolder;
-    font-size: 1.875em;
+    font-size: 1.275em;
+    overflow: auto;
     background-color: $fondonav;
         &__link{
             background: rgb(216, 75, 10);
@@ -35,18 +33,19 @@
         &__titulo{
             background-color:  $fondonav;
             color: $colortitulo;
+            font-size: 1.6em;
         }
 }
 
-.lista-pasos{
+.lista-pasos li {
 
-    margin-left: 1em;
-    margin-bottom: 1em;
-    padding-left: 0.5em;
-    font-size: 1.875em;
-    font-weight:bolder;
+    font-size: 1.5em;
     align-content:center;
     color:$colorparrafo;
+    list-style-type:decimal;
+    margin: 2em;
+    padding: auto;
+    
 
 }
 
@@ -68,4 +67,70 @@
     margin: 1em;
     color: $colorparrafo;
     
+}
+.div__tabla{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+.div__pasos{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content:first baseline;
+    gap: 1em;
+    &__titulo{
+        align-content: left;
+    }
+    &__ubicacion{
+        align-content: center;
+    }
+}
+
+
+.div__iframe{
+    display: flex;
+    flex-direction:column;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.dra{
+    align-content: center;
+    text-align: justify;
+}
+.iframe{
+    align-content: center;
+    
+}
+
+@media only screen and (max-width: 450px) {
+   .tabla-prod{
+       font-size: 0.8em;
+       margin: 0.2em;
+       width: 100%;
+       &__titulo{
+           font-size: 1em;
+       }
+   }
+   .subtitulos-servicios{
+       font-size: 0.8em;
+       text-align: left;
+       
+   }
+   .titulos-servicios{
+       font-size: 1em;
+       text-align: left;
+       
+   }
+   .lista-pasos li {
+       font-size: 0.5em;
+   }
+   .p-servicios{
+       font-size: 0.5em;
+   }
 }
