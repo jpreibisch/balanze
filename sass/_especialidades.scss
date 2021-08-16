@@ -1,3 +1,12 @@
+.titulo-especialidades{
+    font-size: 3em;
+    text-align: center;
+    color: $colortitulo;
+    margin: 1em;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
 .especialidades{
     display:flex;
     flex-direction: column;

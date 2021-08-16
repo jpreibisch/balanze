@@ -32,7 +32,7 @@
     }
         &__titulo{
             background-color:  $fondonav;
-            color: $colortitulo;
+            color:rgb(43, 248, 214);
             font-size: 1.6em;
         }
 }
@@ -58,9 +58,8 @@
 
 .titulos-servicios{
     color: $colortitulo;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
-    text-decoration: underline;
     margin: 1em;
     padding: 1em;
 }

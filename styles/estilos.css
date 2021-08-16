@@ -11,12 +11,11 @@
 }
 
 h1 {
-  font-size: 2em;
-  text-decoration: underline;
+  font-size: 3em;
 }
 
 h2, h3, h4 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 p {
@@ -285,7 +284,7 @@ header {
 }
 
 .hero__titulo, .hero__descr {
-  font-size: 2.5em;
+  font-size: 3em;
   color: #c72e08;
   margin-left: 0.8em;
   min-height: 5rem;
@@ -482,6 +481,15 @@ header {
   background: url("../imagenes/doc10.jpg") no-repeat 50% 20%/cover;
 }
 
+.titulo-especialidades {
+  font-size: 3em;
+  text-align: center;
+  color: #c72e08;
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
 .especialidades {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,7 +680,7 @@ header {
 
 .tabla-prod__titulo {
   background-color: rgba(1, 1, 1, 0.3);
-  color: #43bdb7;
+  color: #2bf8d6;
   font-size: 1.6em;
 }
 
@@ -693,10 +701,9 @@ header {
 }
 
 .titulos-servicios {
-  color: #43bdb7;
-  font-size: 2em;
+  color: #c72e08;
+  font-size: 3em;
   text-align: center;
-  text-decoration: underline;
   margin: 1em;
   padding: 1em;
 }
@@ -804,9 +811,10 @@ header {
 
 .titulo-tienda {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   margin-top: 1em;
   text-align: center;
+  text-decoration: none;
 }
 
 .fondo-tienda {
@@ -999,11 +1007,12 @@ form.formulario-general input, form.formulario-general select, form.formulario-g
 }
 
 .titulo-contacto {
-  font-size: 2em;
+  font-size: 3em;
   color: white;
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
+  text-decoration: none;
 }
 
 .botonc {
@@ -1027,5 +1036,23 @@ form.formulario-general input, form.formulario-general select, form.formulario-g
 
 .back-contacto {
   background: url("../imagenes/back15.jpg");
+}
+
+.container404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=estilos.css.map */
