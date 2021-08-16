@@ -289,6 +289,7 @@ header {
   color: #c72e08;
   margin-left: 0.8em;
   min-height: 5rem;
+  font-weight: 900;
 }
 
 .hero__descr {
@@ -693,9 +694,11 @@ header {
 
 .titulos-servicios {
   color: #43bdb7;
-  font-size: 3em;
-  margin: 1em;
+  font-size: 2em;
+  text-align: center;
   text-decoration: underline;
+  margin: 1em;
+  padding: 1em;
 }
 
 .p-servicios {
@@ -800,10 +803,10 @@ header {
 }
 
 .titulo-tienda {
-  color: #c72e08;
+  color: white;
   font-size: 2em;
   margin-top: 1em;
-  margin-left: 0.5em;
+  text-align: center;
 }
 
 .fondo-tienda {
@@ -996,10 +999,11 @@ form.formulario-general input, form.formulario-general select, form.formulario-g
 }
 
 .titulo-contacto {
-  font-size: 3em;
+  font-size: 2em;
   color: white;
-  margin-left: .5em;
   margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .botonc {
