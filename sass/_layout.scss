@@ -6,8 +6,6 @@ html{
 }
 
 .menu__logo{
-    width: 37vh;
-    height: 12vh;
     margin: 0.5em;
 
 }
@@ -30,39 +28,40 @@ header {
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
-	padding: 0.5em 1em;
+	align-items: center;
 	box-shadow: 0 0 20px 0 black;
+    padding: 1.1em;
 }
-
-@media only screen and (max-width: 450px){
-        .menu__logo{
-            align-content: center;
+ 
+.menu__logo{
+    align-content: center;
             
-        }
     }
 
 .menu{
     display: flex;
-    flex-direction: row-reverse;
-    font-size: 1.25rem; 
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-items: flex-end;
+    font-size: 1.2em; 
     font-weight: bolder;
     background-color: $fondonav;
-    gap: 1em;
+    gap: .7em;
     list-style-type:none;
     padding: 0.625em;
-
-    &__enlace {
-        padding: 1em;
+    
+        &__enlace {
+        padding: .7em;
         text-decoration: none;
         color: rgb(8, 7, 0); 
         &:hover {
             transform: 2px;
             color: whitesmoke;
             transition: 2s;
+            }
         }
     }
-}
+
 
 .menu__sm{
     display: none;
@@ -100,8 +99,10 @@ header {
 		gap: 1.5em;
 	    background: $colorfondo;
 	    padding: 2em;
+        margin-left: 16em;
 	    border-bottom-left-radius: 0.5em;
 	    animation: scale-in-ver-top 300ms both;
+        font-size: 0.8em;
 	 
 	}
 	

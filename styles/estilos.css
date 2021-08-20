@@ -36,8 +36,6 @@ html {
 }
 
 .menu__logo {
-  width: 37vh;
-  height: 12vh;
   margin: 0.5em;
 }
 
@@ -61,19 +59,17 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding: 0.5em 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: 0 0 20px 0 black;
           box-shadow: 0 0 20px 0 black;
+  padding: 1.1em;
 }
 
-@media only screen and (max-width: 450px) {
-  .menu__logo {
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
+.menu__logo {
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .menu {
@@ -81,19 +77,24 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  font-size: 1.25rem;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.2em;
   font-weight: bolder;
   background-color: rgba(1, 1, 1, 0.3);
-  gap: 1em;
+  gap: .7em;
   list-style-type: none;
   padding: 0.625em;
 }
 
 .menu__enlace {
-  padding: 1em;
+  padding: .7em;
   text-decoration: none;
   color: #080700;
 }
@@ -148,9 +149,11 @@ header {
     gap: 1.5em;
     background: #525455;
     padding: 2em;
+    margin-left: 16em;
     border-bottom-left-radius: 0.5em;
     -webkit-animation: scale-in-ver-top 300ms both;
             animation: scale-in-ver-top 300ms both;
+    font-size: 0.8em;
   }
   @-webkit-keyframes scale-in-ver-top {
     0% {
@@ -479,6 +482,15 @@ header {
 
 #img3 {
   background: url("../imagenes/doc10.jpg") no-repeat 50% 20%/cover;
+}
+
+@media only screen and (max-width: 450px) {
+  .container__cards {
+    margin-left: 5em;
+  }
+  .card__desc {
+    font-size: 1em;
+  }
 }
 
 .titulo-especialidades {

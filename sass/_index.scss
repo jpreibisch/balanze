@@ -184,3 +184,12 @@
     
     background:url("../imagenes/doc10.jpg") no-repeat 50% 20%/cover;
 }
+
+@media only screen and (max-width: 450px){
+    .container__cards{
+        margin-left: 5em;
+    }
+    .card__desc{
+        font-size: 1em;
+    }
+}
